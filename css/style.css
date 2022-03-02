@@ -1,0 +1,1243 @@
+/*
+
+
+*/
+
+@charset 'UTF-8';
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('font/Montserrat-SemiBold.ttf');
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('font/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('font/Montserrat-Medium.ttf');
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('font/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('font/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: Roboto-Light;
+  src: url('font/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: SFProText-Regular;
+  src: url('font/SFProText-Regular.ttf');
+}
+@font-face {
+  font-family: SFProText-Light;
+  src: url('font/SFProText-Light.ttf');
+}
+@font-face {
+  font-family: MYRIADPRO-bold;
+  src: url('font/FontsFree-Net-MYRIADPRO-SEMIBOLD.ttf');
+}
+@font-face {
+  font-family: MYRIADPRO-Regular;
+  src: url('font/FontsFree-Net-MYRIADPRO-REGULAR.ttf');
+}
+
+/*********************************************************************************/
+/* Basic      <button onclick="calcDiff()">Calculate diff</button>                                                                   */
+/*********************************************************************************/
+
+			body {
+				display: block;
+				margin: 0px;
+				padding: 0px;
+				background: #ffffff;
+				font-family: 'Lato', sans-serif;
+				font-size: 12pt;
+				font-weight: 300;
+				color: #333;
+				width: 100%;
+				background-color: white;
+				
+			}
+
+			h1, h2, h3 {
+				margin: 0px;
+				padding: 0px;
+				font-weight: 300;
+			}
+
+			p {
+				line-height: 180%;
+			}
+
+			ul{ 
+				margin: 0;
+				text-decoration: none;
+				list-style-type:none;
+				margin-top: 80px;
+				float: left;
+			}
+
+			a {
+				text-decoration: none;
+				color: #fff;
+			}
+
+
+			strong {
+				font-weight: 700;
+				color: #2A2A2A;
+			}
+			button:hover{
+				cursor: pointer;
+			}
+			button:active {
+   			 	outline: none;
+ 			    border: none;
+			}
+
+
+/*********************************************************************************/
+/* HEADER NAV                                                                    */
+/*********************************************************************************/			
+
+header{
+	height: 160px;
+	background-color: #e9c205;
+	-webkit-box-shadow: inset 0px 80px 110px 40px rgba(0,0,0,0.6);
+	-moz-box-shadow: inset 0px 80px 110px 40px rgba(0,0,0,0.6);
+	box-shadow: inset 0px 80px 110px 40px rgba(0,0,0,0.6);
+	font-family: Montserrat-SemiBold; 
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+}
+.header-logo{
+	margin-right: 30px;
+	margin-top: 15px;
+	width: 130px;
+	float: right;
+}
+header .curent a{
+	color: black;
+}
+ul div{
+	float: left;
+	height: 70px;
+}
+
+ul div img{
+	float: right;
+}
+ul li {
+	float: left;
+}
+
+ul li a{
+	display: block;
+	padding: 20px 25px 15px 25px;
+}
+.lng-btn{
+	width: 140px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px 10px 20px;
+	margin-right: 30px;
+}
+.lng-btn:focus{
+  outline-style: none;
+  box-shadow: none;
+  border:none;
+}
+.lng-btn img{
+	border-radius: 5px;
+	float: left;
+	width: 38px;
+}
+.lng-btn .arrow_down{
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+}
+.lng-btn .arrow_down img{	
+	width: 15px;
+}
+.lng-btn a{
+	padding: 0;
+}
+#Rus{
+	display: none;
+	position: relative;
+	z-index: 1;
+	border-radius: 0px 0px 5px 5px;
+	padding-bottom: 20px;
+}
+#Hrv{
+	display: none;
+	position: relative;
+	z-index: 1;
+	border-radius: 0px;
+}
+#Eng{
+	display: none;
+	position: relative;
+	z-index: 1;
+	border-radius: 0px;
+}
+#Srb{
+	display: none;
+	position: relative;
+	z-index: 1;
+	border-radius: 0px;
+}
+/*********************************************************************************/
+/* MAIN IMG_TEXT                                                                 */
+/*********************************************************************************/	
+
+main{ 
+	overflow: hidden;
+ 	height: auto;
+ 	background-color: #e9c205;
+ 	padding-bottom: 30px;
+}
+.main_img_text{
+	font-family: Montserrat-SemiBold;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	width: 920px;
+	margin-top: 70px;
+}
+.main_img_text img{
+	float: left;
+	width: 210px;
+	margin-top: 10px;
+}
+.main_text{
+	margin-top: 45px;
+}
+/*********************************************************************************/
+/* MAIN ASIDE                                                                    */
+/*********************************************************************************/	
+.main_aside{
+	height: 250px;
+	margin-top: 10px;
+	float: right;
+	width: 200px;
+}
+.main_aside span{
+	font-family: Roboto-Medium;
+	font-weight: bold;
+	font-size: 16px;
+	width: 160px;
+}
+.aside_aside{
+	width: 160px;
+	float: right;
+}
+.main_aside button{
+font-family: Montserrat-SemiBold;
+margin-top: 15px;
+margin-right: 50px;
+border: none;
+border-radius: 8px;
+width: 130px;
+padding: 5px 10px 5px 10px;
+height: 35px; 
+background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* MAIN ASIDE 2 */
+.main_aside2{
+	height: 145px;
+	margin-top: 10px;
+	float: right;
+	width: 200px;
+}
+.main_aside2 span{
+	font-family: Roboto-Medium;
+	font-weight: bold;
+	font-size: 16px;
+	width: 160px;
+}
+.aside_aside2{
+	width: 160px;
+	float: right;
+}
+.main_aside2 button{
+font-family: Montserrat-SemiBold;
+margin-top: 15px;
+margin-right: 50px;
+border: none;
+border-radius: 8px;
+width: 130px;
+padding: 5px 10px 5px 10px;
+height: 35px; 
+background-color: #e9c205;
+}
+
+
+.main_vehicles{ 
+	overflow: hidden;
+ 	height: auto;
+ 	background-color: white;
+ 	padding-bottom: 30px;
+}
+.kovid {
+	height: 125px;
+	width: 80%;
+	float: left;
+	margin-top: 25px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	background-color: black;
+}
+.kovid img{
+	height: 125px;
+	width: 100%;
+}
+/* MAIN IMG CAR */
+.img_car{
+	width: 830px;
+}
+
+/*********************************************************************************/
+/* MAIN FORM                                                                     */
+/*********************************************************************************/
+.reserv{
+	overflow: hidden;
+	margin-top: 30px;
+}
+.reserv form{
+	background-color: rgba(255, 255, 255, 0.6);
+	margin-left: 15%;
+	width: 930px;
+	padding: 25px;
+	padding-bottom: 95px;
+	border-radius: 8px;
+}
+.reserv form .form_wrap{
+	width: 720px;
+	float: left;
+}
+.select_place{
+	background-color: rgba(197,197,199, 0.6);
+	font-family: Montserrat-Regular;
+	margin-top: 5px;
+	width: 710px;
+	height: 35px;
+	padding: 5px 10px 5px 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 22px;
+}
+.form_datum {
+	font-family: Montserrat-Bold;
+	font-size: 15px;
+	margin-top: 15px;
+	width: 25%;
+	float: left;
+}
+.form-control{
+	background-color: rgba(197,197,199, 0.6);
+	font-family: Roboto-Light;
+	font-size: 20px;
+	margin-top: 8px;
+	width: 140px;
+	border: none;
+	border-radius: 5px;
+	height: 38px;
+	padding-left: 10px;
+}
+.pickup-time{
+	background-color: rgba(197,197,199, 0.6);
+	font-family: Roboto-Light;
+	font-size: 20px;
+	margin-top: 8px;
+	width: 140px;
+	border: none;
+	border-radius: 5px;
+	height: 38px;
+	padding-left: 10px;	
+}
+.return-time{
+	background-color: rgba(197,197,199, 0.6);
+	font-family: Roboto-Light;
+	font-size: 20px;
+	margin-top: 8px;
+	width: 140px;
+	border: none;
+	border-radius: 5px;
+	height: 38px;
+	padding-left: 10px;	
+}
+.form_search_btn{
+	background-color: rgba(128,128,128, 0.6);
+	 font-family: Montserrat-Regular;
+	 font-size: 22px;
+	width: 200px;
+	border-radius: 6px;
+	border: none;
+	padding: 10px;
+	height: 43px;
+	padding-left: 20px;
+}
+.form_search_btn img{
+	float: left;
+	width: 30px;
+
+}
+
+/*********************************************************************************/
+/* MAIN MODAL                                                                    */
+/*********************************************************************************/
+/* Modal Content */
+.modal-content {
+  background-color: #ffffff;
+  margin: 30px auto;
+  padding: 20px;
+  width: 92%;
+  max-width: 400px;
+  border-radius: 8px;
+  font-family: Montserrat-Regular;
+  font-weight: bold;
+  font-size: 14px;
+}
+.modal-content .label p{
+	float: left;
+	margin-top: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	width: 210px;
+}
+.modal-content .pLeft{
+	float: left;
+}
+.modal-content .iRight{
+	float: right;
+}
+.modal-content .label{
+	height: 60px;
+}
+.modal-content .wrapHight{
+	height: 48px;
+	width: 100%;
+	margin-top: 15px;
+}
+.modal-content .label label{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.modal-content img{
+	float: left;
+	width: 70px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default  */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.join-content{
+  height: 630px;
+}
+.login-content{
+  height: 300px;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Content Form */
+.modal form {
+	width: 100%;
+	border: none;
+}
+.modal form a {
+	color: #c5a407;
+}
+.modal form input{
+	width: 60%;
+	background-color: rgba(197,197,199, 0.6);
+	font-family: Roboto-Light;
+	font-size: 20px;
+	margin-top: 8px;
+	width: 250px;
+	border: none;
+	border-radius: 5px;
+	height: 38px;
+	padding-left: 10px;
+}
+.modal form input:focus{
+  outline-style: none;
+  box-shadow: none;
+  border:none;
+}
+.modal form #agree{
+	width: 20px;
+	margin-left: 90px;
+	height: 14px;
+}
+.modal form .subbmit_btn {
+	background-color: #c5a407;
+	width: 100%;
+}
+#Login{
+	margin-top: 30px;
+}
+/*********************************************************************************/
+/* MAIN CARS                                                                     */
+/*********************************************************************************/
+.main_vehicles_wraper .row .column{
+	margin-top: 60px;
+}
+.row {
+	margin-bottom: 70px;
+	width: 1210px;
+	margin: 90px auto;
+}
+.fontSF{
+	font-family: SFProText-Regular;
+}
+.fontSFlite{
+	font-family: SFProText-Light;
+}
+.mainCars_logos {
+	width: 100%;
+	height: auto;
+}
+.row .column{
+	display: inline-block;
+	text-align: center;
+}
+.row .column p{
+	
+	margin: 0;
+}
+.mySlides img{
+	width: 250px;
+}
+.mySlides button img{
+	width: 20px;
+}
+.mySlides{
+	padding: 30px 20px 0px;
+	height: 170px;
+	width: 340px;
+	display: none;
+}
+
+.row .column .car_icons{
+	margin-left: 2px;
+}
+.row .column .car_icons a.tooltip img{
+	width: 30px;
+}
+
+      a.tooltip {
+
+      }
+      a.tooltip:hover {
+        cursor: help;
+        position: relative;
+      }
+      a.tooltip span {
+        display: none;
+      }
+      a.tooltip:hover span {
+        color: black;
+        font-size: 18px;
+        border: #666 1px solid;
+        padding: 5px 20px 5px 5px;
+        display: block;
+        z-index: 100;
+        background: #e9c205;
+        left: 0px;
+        margin: 15px;
+        position: absolute;
+        top: 15px;
+        text-decoration: none;
+      }
+.main3 {
+	height: 380px;
+}
+.main3 div{
+	display: inline-block;
+}
+.artileCar{
+	position: absolute;
+	width: 45%;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+.artileCar p{
+	text-align: center;
+	padding: 5px;
+	background-color: #d6d6d6;
+	border-radius: 7px;
+}
+.artileCar img{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+}
+.imgWhiteCar img{
+		position: absolute;
+		right: 0px;
+ 		width: 700px;
+ 		height: auto;
+ 		margin-top: 14px;
+}
+.main4 {
+	height: 503.5px;
+	background-color:  #dfb707;
+}
+.main4 div{
+	display: inline-block;
+}
+.artileCar2{
+	position: absolute;
+	right: 30px;
+	width: 680px;
+	margin-left: 40px;
+	margin-top: 90px;
+}
+.artileCar2 img{
+	margin-bottom: 30px;
+	float: right;
+}
+.imgWhiteCar2 img{
+		position: absolute;
+		left: 0px;
+ 		width: 400px;
+ 		height: 487px;
+}
+.instagram {
+	position: absolute;
+	right: 25px;
+	width: 120px;
+	margin-top: 410px;
+	font-size: 15px;
+}
+.instagram img {
+	margin-left: 20px;
+	width: 80px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  margin-top: 35px;
+  margin-left: -30px;
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  border: none;
+}
+.reservCars_btn{
+	margin-top: 15px;
+	background-color: #e9c205;
+	padding: 8px 32px;
+	border: none;
+	font-size: 18px;
+	border-radius: 12px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-left: 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+
+
+/*********************************************************************************/
+/* RESERV MODAL                                                                    */
+/*********************************************************************************/
+/* Modal Content */
+.modal-content-reserv {
+  background-color: white;
+  margin: 30px auto;
+  padding: 20px;
+  border: none;
+  width: 92%;
+  max-width: 1070px;
+  height: 610px;
+  border-radius: 8px;
+  font-family: SFProText-Regular;
+  font-weight: bold;
+  font-size: 22px;
+}
+.modal-content-reserv h3{
+	font-family: SFProText-Light;
+	margin-bottom: 20px;
+}
+.modal-content-reserv h5{
+	font-family: SFProText-Light;
+}
+.form_left_reserev{
+	text-align: center;
+	float: left;
+	width: 620px;
+}
+.form_right_reserev{
+	float: right;
+	width: 420px;
+}
+.modal-content-reserv .label p{
+	margin-top: 12px;
+	font-size: 18px;
+	font-weight: bold;
+	width: 210px;
+	float: right;
+}
+
+.modal-content-reserv label{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+/* The Modal (background) */
+.reserv_modal {
+  display: none; /* Hidden by default  */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content Form */
+.reserv_modal form {
+
+	margin-top: 37px;
+	width: 100%;
+	border: none;
+}
+.reserv_modal form a {
+	color: #fff;
+}
+.reserv_modal form input{
+	font-family: SFProText-Regular;
+	width: 60%;
+	background-color: rgba(197,197,199, 0.6);
+	font-size: 20px;
+	margin-top: 8px;
+	width: 250px;
+	border: none;
+	border-radius: 5px;
+	height: 38px;
+	padding-left: 10px;
+}
+.reserv_modal form input:focus{
+  outline-style: none;
+  box-shadow: none;
+  border:none;
+}
+.reserv_modal form #agree{
+	width: 20px;
+	margin-left: 100px;
+	height: 14px;
+}
+.reserv_modal form .subbmit_btn {
+	font-family: SFProText-Regular;
+	background-color: rgba(128,128,128, 0.6);
+	width: 100%;
+}
+.select_place_module {
+	font-family: SFProText-Regular;
+	width: 350px;
+	font-size: 14px;
+	color: #8080806e;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #8080806e;
+}
+.select_car_module{
+	font-family: SFProText-Regular;
+	width: 170px;
+	font-size: 14px;
+	color: #8080806e;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #8080806e;
+}
+.form_datum_modal .form-control{
+	font-family: SFProText-Regular;
+	height: 38px;
+	padding: 0px 10px;
+	width: 160px;
+	font-size: 14px;
+	color: #8080806e;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 2px solid #8080806e;
+	background-color: white;
+}
+.form_datum_modal .time_modal{
+	font-family: SFProText-Regular;
+	height: 42px;
+	width: 100px;
+	font-size: 14px;
+	color: #8080806e;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	border-radius: 5px;
+	border: 2px solid #8080806e;
+	background-color: white;
+}
+.form_datum_modal .empty{
+	border: 1px solid red;
+}
+#palce_input{
+	font-family: SFProText-Regular;
+	background-color: rgb(204 202 191);
+	position: absolute;
+	margin-top: -33px;
+	margin-left: 2px;
+	width: 500px;
+	height: 28px;
+	border-radius: 3px;
+	display: none;
+	padding-left: 10px;
+	font-size: 18px;
+	border: none;
+}
+.input_place_module{
+	font-family: SFProText-Regular;
+	background-color: rgb(204 202 191);
+	position: absolute;
+	margin-top: -33px;
+	margin-left: 2px;
+	width: 400px;
+	height: 20px;
+	border-radius: 3px;
+	display: none;
+	padding-left: 10px;
+	font-size: 18px;
+	border: none;
+}
+#input_place_module{
+	font-family: SFProText-Regular;
+	height: 36px;
+	width: 290px;
+	font-size: 14px;
+	color: #8080806e;
+	margin-top: -52px;
+	margin-left: 125px;
+	border-radius: 3px;
+	border: 2px solid #8080806e;
+	background-color: white;	
+}
+#input_place_module2{
+	font-family: SFProText-Regular;
+	height: 36px;
+	width: 290px;
+	font-size: 14px;
+	color: #8080806e;
+	margin-top: -52px;
+	margin-left: 125px;
+	border-radius: 3px;
+	border: 2px solid #8080806e;
+	background-color: white;	
+}
+.dodatci .dodatci_wraper{
+	font-family: SFProText-Regular;
+	height: 96px;
+	margin-top: 10px;
+	border-radius: 5px;
+	background-color: #6f67580f;
+	margin-right: 10px;
+}
+.dodatci .dodatci_wraper div{
+	display: inline-block;
+	float: left;
+}
+.dodatci .dodatci_wraper div span{
+	font-size: 12px;
+}
+.dodatci .dodatci_wraper div button{
+	margin-top: 10px;
+	padding: 0;
+	border: none;
+	background-image: url("../img/unchek.png");
+	height: 43px;
+	width: 43px;
+	background-color: transparent;
+}
+.dodatci .dodatci_wraper div .active{
+	background-image: url("../img/chek.png");
+}
+
+.dodatci .dodatci_wraper span{
+	padding: 5px 10px;
+}
+
+.borderForma{
+}
+.Reserv_form h3,h4,h5{
+	margin: 0;
+}
+.form_right_reserev .info_section input{
+	font-family: SFProText-Regular;
+	width: 170px;
+	height: 38px;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-size: 16px;
+	color: gray;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: 2px solid #8080806e;
+	background-color: white;
+}
+.form_right_reserev .info_section .empty{
+	border: 1px solid red;
+}
+.form_right_reserev .info_section input:focus{
+  outline-style: none;
+  box-shadow: none;
+  border: 2px solid #8080806e;
+}
+.form_right_reserev .info_section ::placeholder {
+  color: #8080806e;
+}
+.form_right_reserev .info_section textarea{
+	font-family: SFProText-Regular;
+	width: 390px;
+	height: 140px;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+	color: #8080806e;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: 2px solid #8080806e;
+	background-color: white;
+	resize: none;
+}
+.form_right_reserev .info_section .marginright{
+	margin-right: 27px;
+}
+.form_right_reserev .next_section div{
+	display: inline-block;
+}
+.form_right_reserev .next_section {
+	margin-top: -10px;
+	height: 80px;
+}
+.form_right_reserev .ukopno_cena{
+	text-align: center;
+	width: 180px;
+	margin-right: 30px;
+	float: left;
+}
+.form_right_reserev .ukopno_cena input{
+	font-family: SFProText-Regular;
+	margin: 0;
+	width: 170px;
+	text-align: center;
+	height: 94px;
+	background-color: #6f67580f;
+	color: black;
+}
+#depozzit{
+	font-size: 14px;
+	color: gray;
+}
+
+.form_right_reserev .agree_next {
+	margin-top: 28px;
+	width: 210px;
+	font-size: 12px;
+	text-align: left;
+}
+.form_right_reserev .agree_next input{
+	font-family: SFProText-Regular;
+	float: left;
+	margin: 0;
+	margin-top: 22px;
+	width: 20px;
+	height: 20px;
+}
+.form_right_reserev .agree_next a{
+	font-family: SFProText-Regular;
+	color: #e9c205;
+}
+.form_right_reserev .align_agree{
+	margin-top: 25px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+.form_right_reserev .agree_next .next_btn{
+	font-family: SFProText-Regular;
+	width: 195px;
+	margin-top: 10px;
+	background-color: #c5a407;
+	padding: 10px 32px;
+	border: none;
+	font-size: 18px;
+	border-radius: 5px;
+}
+.car_price_hidden{
+	display: none;
+}
+
+
+
+.next_module_leftside{
+	position: relative;
+	margin-top: 20px;
+	float: left;
+	width: 780px;
+	font-size: 18px;
+	height: 545px;
+}
+.next_module_leftside .left{
+	float: left;
+	width: 400px;
+}
+.next_module_leftside .left .li_left{
+	margin-bottom: 30px;
+}
+.next_module_leftside .left .next_btn{
+	font-family: SFProText-Regular;
+	width: 195px;
+	margin-top: 10px;
+	background-color: #c5a407;
+	padding: 10px 32px;
+	border: none;
+	font-size: 18px;
+	border-radius: 5px;
+	position: absolute;
+	bottom:0;
+	left: 0;
+}
+.next_module_leftside .left .li_left label{
+	font-family: SFProText-Light;
+	margin: 0;
+	color: #8080806e;
+}
+.next_module_leftside .left .li_left p{
+	font-family: SFProText-Light;
+	margin: 0;
+	margin-top: 5px;
+}
+.next_module_leftside .right{
+	font-size: 16px;
+	float: right;
+	text-align: right;
+}
+.next_module_leftside .right p{
+	font-family: SFProText-Light;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.next_module_leftside .right span{
+	font-family: SFProText-Light;
+	color: #8080806e;
+	font-size: 13px;
+}
+.next_module_leftside .right .img_left_car{
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.next_module_leftside .right h4{
+	font-family: SFProText-Light;
+	width: 260px;
+	text-align: center;
+	color: black;
+	font-size: 28px;
+	font-weight: 300;
+}
+.next_module_rightside{
+	position: relative;
+	width: 220px;
+	margin-top: 20px;
+	float: right;
+	font-size: 16px;
+	height: 545px;
+}
+.next_module_rightside .li_right label{
+	font-family: SFProText-Light;
+	margin: 0;
+	color: #8080806e;
+}
+.next_module_rightside .li_right p{
+	font-family: SFProText-Light;
+	margin: 0;
+	margin-top: 5px;
+}
+.next_module_rightside span{
+	font-family: SFProText-Light;
+	color: #8080806e;
+	font-size: 13px;
+	position: absolute;
+	bottom: 96px;
+	right: 38px;
+}
+form .next_module_rightside input{
+	font-family: SFProText-Light;
+	text-align: center;
+	color: black;
+	background-color: transparent;
+	border: 1px solid #8080806e;
+	font-size: 16px;
+	width: 156px;
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	color: black;
+
+}
+form .next_module_rightside .empty {
+	border: 1px solid red;
+}
+.next_module_rightside .next_btn{
+	font-family: SFProText-Regular;
+	width: 170px;
+	background-color: #c5a407;
+	padding: 10px 20px;
+	border: none;
+	font-size: 16px;
+	border-radius: 5px;
+	position: absolute;
+	bottom:0;
+	right: 0;
+}
+.img_borderForma{
+	margin-left: 25px;
+}
+.empty {
+	border: 1px solid red;
+}
+
+
+/* RENTAL   */
+.rental_text{
+	margin-top: 280px;
+	margin-left: 60px;
+	margin-bottom: 50px;
+	width: 600px;
+	font-size: 10pt;
+}
+.rental_text h2{
+	font-family: Montserrat-SemiBold;
+
+}
+.MYRIADPRO_bold{
+	font-family: MYRIADPRO-bold;
+}
+.MYRIADPRO_Regular{
+	font-family: MYRIADPRO-Regular;	
+}
+.rental_right{
+	font-family: MYRIADPRO-Regular;	
+	float: right;
+	margin-right: 40px;
+	width: 400px;
+	text-align: right;
+	font-size: 10pt;
+}
+/* USLUGE   */
+.usluge_text {
+	width: 700px;
+	margin: 220px auto;
+}
+.usluge_text div{
+	display: inline-block;
+	margin: 40px 48px;
+}
+.usluge_text h2,.usluge_text p{
+	text-align: center;
+}
+.usluge_text h2{
+	font-family: Montserrat-SemiBold;
+	margin-bottom: 30px;
+}
+/* KONTAKT   */
+.contact_text{
+	text-align: center;
+	font-size: 24px;
+	font-family: MYRIADPRO-Regular;	
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.contact_text p{
+	margin-top: -60px;
+	font-size: 24px;
+	font-family: Montserrat-SemiBold;
+}
+/*********************************************************************************/
+/* FOOTER                                                                        */
+/*********************************************************************************/
+footer{
+	background-color: rgb(214, 213, 213);
+	height: 110px;
+	font-weight: bold;
+}
+footer .footer_left{
+	padding: 10px 25px;
+	padding-left: 50px;
+	float: left;
+}
+footer .footer_left p{
+	margin: 5px;
+}
+footer .footer_card{
+	margin-top: 20px;
+	float: right;
+	width: 500px;
+}
+
+
+
+/*********************************************************************************/
+/* Back                                                                      */
+/*********************************************************************************/
+
+.addcar input{
+	float: right;
+	width: 200px;
+}
